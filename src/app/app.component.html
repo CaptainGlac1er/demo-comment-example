@@ -1,0 +1,14 @@
+<app-comment [comment]="input" *ngIf="toggle" [height]="height"></app-comment>
+
+<input [(ngModel)]="input">
+<input [(ngModel)]="height">
+
+<input type="checkbox" [(ngModel)]="toggle">
+
+
+
+<app-comment [comment]="'jkhasfklhasdjkhfjklasdfjkhsdakfhsdajklfhskjlfhaklsjfhlkjsdahjkfsahdfkjjsdhfkjlasdhfkjlhkjasldfhkljashkdf'" [height]="10"></app-comment>
+<app-comment [comment]="'jkhasfklhasdjkhfjklasdfjkhsdakfhsdajklfhskjlfhaklsjfhlkjsdahjkfsahdfkjjsdhfkjlasdhfkjlhkjasldfhkljashkdf'" [height]="100"></app-comment>
+<app-comment [comment]="'jkhasfklhasdjkhfjklasdfjkhsdakfhsdajklfhskjlfhaklsjfhlkjsdahjkfsahdfkjjsdhfkjlasdhfkjlhkjasldfhkljashkdf'" [height]="1000"></app-comment>
+<app-comment [comment]="'jkhasfklhasdjkhfjkla'" [height]="20"></app-comment>
+<app-comment [comment]="'jkhasfklhasdjkhfjklasdfjkhsdakfhsdf'" [height]="1"></app-comment>

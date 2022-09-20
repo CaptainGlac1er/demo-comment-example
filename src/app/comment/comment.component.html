@@ -1,0 +1,7 @@
+<div class="card">
+  <div>Title</div>
+  <div #wrapper>
+    <div [innerHTML]="comment" [style.width]="'50px'" [style.word-break]="'break-word'" appMaxHeight [cutOff]="height" [overrideShow]="showFullComment" (textHidden)="shorten = $event" [wrapper]="wrapper" #container></div>
+  </div>
+  <button *ngIf="shorten" (click)="showComment()">{{showFullComment ? 'Hide' : 'Show' }}</button>
+</div>
